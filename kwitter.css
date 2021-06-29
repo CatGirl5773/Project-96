@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    background: rgb(255, 241, 120);
+}
+
+#logo {
+    height: 75px;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#login {
+    margin-top: 10px;
+    width: 600px;
+    border-radius: 15px;
+}
+
+.container {
+    background-color: rgb(255, 249, 191);
+    padding-bottom: 40px;
+    border-radius: 50px;
+}
+
+#messages {
+    margin-bottom: 10px;
+}

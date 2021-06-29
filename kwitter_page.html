@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Let's Chat Message Page </title>
+        <meta name="viewport" content="width=device-width intial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="kwitter_room.css">
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+    <body>
+        <button id="logout" onclick="logout()" class="btn btn-danger"> <span class="glyphicon glyphicon-log-out"></span> Logout </button>
+        <h1 class="header"> Let's Chat! <span> <img src="messages.png" id="messages"> </span>
+        </h1>
+        <div class="container">
+            <div id="output" style="text-align: left; margin-bottom: 70px;"> </div>
+        </div>
+        <div class="input_div_message_page">
+            <center>
+            <label> Send A Message To Your Classmates/Teachers: <img src="logo.png" height="25px" style="margin-left: 2.5px;"> </label>
+            <input type="text" id="msgs" placeholder="Type Your Message Here" class="form-control">
+            <button onclick="send();" id="sendButton" class="btn btn-success">Send</button>
+            </center>
+        </div>
+        <script src="kwitter_page.js"></script>
+    </body>
+</html>

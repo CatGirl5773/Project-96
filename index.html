@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Let's Chat </title>
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="kwitter.css">
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+    <body>
+        <h1 class="header"> Let's Chat! <span> <img src="messages.png" id="messages"> </span> </h1>
+        <div class="container">
+            <img id="logo" src="logo.png">
+            <h2> Hi, and welcome to the Let's Chat Web App! </h2>
+            <h3> Log in to chat with all of your friends! </h3>
+            <label> <b> Username: </b> </label>
+            <input type="text" id="user_name" placeholder="Username Here" class="form-control">
+            <button id="login" class="btn btn-primary" onclick="addUser()"> <span class="glyphicon glyphicon-log-in"></span> Log In! </button>
+        </div>
+        <script src="kwitter.js"></script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Let's Chat</title>
+        <meta name="viewport" content="width=device-width intial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="kwitter_room.css">
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+    <body>
+        <button class="btn btn-danger" id="logout" onclick="logout()"> <span class="glyphicon glyphicon-log-out"></span> Log out </button>
+        
+        <h1 class="header"> Let's Chat! <span>
+            <img src="messages.png" height="50px">
+         </span> </h1>
+
+        <div class="container">
+
+        <h2 id="username"> Welcome, User! </h2>
+        <h3> To start using Let's Chat <span>
+            <img src="logo.png" height="50px" style="margin-left: 5px;">
+        </span>, 
+
+         enter your Room Name below! </h3>
+
+            <label> #Room Name: </label>
+            <input type="text" id="roomname" class="form-control" placeholder="#Room Name Here">
+            <button class="btn btn-primary" onclick="addRoom()" style="margin-top: 10px;"> <span class="glyphicon glyphicon-plus"></span> #Add A Room </button>
+        </div>
+        <h2> #Trending Rooms </h2>
+        <div id="output" class="container"></div>
+
+        <script src="kwitter_room.js"></script>
+    </body>
+</html>
